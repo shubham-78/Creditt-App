@@ -1,0 +1,42 @@
+{
+    "_id" : ObjectId("6218881708877d626409238e"),
+    "Name" : "Vaibhav",
+    "Email" : "vaibhav@gmail.com",
+    "Password" : "$2a$08$10D2ks9IMBoLRbP1h2.viOhQNppEG92SQSJhsHmsentRKqkscbSEG",
+    "MobileNumber" : 1234567892,
+    "DOB" : ISODate("2000-08-25T00:00:00.000Z"),
+    "City" : "Indore",
+    "State" : "MP",
+    "Country" : "India",
+    "createdAt" : ISODate("2022-02-25T07:41:11.711Z"),
+    "updatedAt" : ISODate("2022-02-25T07:41:11.711Z"),
+    "__v" : 0
+}
+{
+    "_id" : ObjectId("6218884b08877d6264092391"),
+    "Name" : "Shubham",
+    "Email" : "shubham@gmail.com",
+    "Password" : "$2a$08$M9UYHt9E0rpgRCxH0LEqNuk9d.oSFzAabMG2mGFPu27X.06V3flv.",
+    "MobileNumber" : 1234567891,
+    "DOB" : ISODate("2000-08-25T00:00:00.000Z"),
+    "City" : "Mandsaur",
+    "State" : "MP",
+    "Country" : "India",
+    "createdAt" : ISODate("2022-02-25T07:42:03.783Z"),
+    "updatedAt" : ISODate("2022-02-25T08:03:03.841Z"),
+    "__v" : 0,
+}
+{
+    "_id" : ObjectId("621888a908877d626409239b"),
+    "Name" : "Rohit",
+    "Email" : "rohti@gmail.com",
+    "Password" : "$2a$08$YnzKJKAR4vuGuefv/jR3.u0Zr5SM4W1nqBdTeVxegGV3n.BCjVz4q",
+    "MobileNumber" : 1234567893,
+    "DOB" : ISODate("2000-08-25T00:00:00.000Z"),
+    "City" : "Gwalior",
+    "State" : "MP",
+    "Country" : "India",
+    "createdAt" : ISODate("2022-02-25T07:43:37.743Z"),
+    "updatedAt" : ISODate("2022-02-25T07:43:37.743Z"),
+    "__v" : 0
+}

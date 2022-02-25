@@ -1,0 +1,232 @@
+{
+	"info": {
+		"_postman_id": "47e25a21-079d-4365-a52c-31ad30454aad",
+		"name": "Creditt-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Rohit\",\r\n    \"Email\": \"rohti@gmail.com\",\r\n    \"Password\": \"rohit123\",\r\n    \"MobileNumber\":1234567893,\r\n    \"DOB\": \"2000-08-25\",\r\n    \"City\":\"Gwalior\",\r\n    \"State\":\"MP\",\r\n    \"Country\":\"India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\":\"shubham@gmail.com\",\r\n    \"Password\":\"shubham123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View user profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjE4ODg0YjA4ODc3ZDYyNjQwOTIzOTEiLCJpYXQiOjE2NDU3NzQ5MjN9.VuiulYJisIH7jMFCWM81RzS-jYyKSyXNndavr48oRa0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/viewprofile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"viewprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjE4ODg0YjA4ODc3ZDYyNjQwOTIzOTEiLCJpYXQiOjE2NDU3NzQ5MjN9.VuiulYJisIH7jMFCWM81RzS-jYyKSyXNndavr48oRa0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"MobileNumber\":1234567891\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/updateProfile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"updateProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/listallusers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"listallusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload profilepic",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjE4ODg0YjA4ODc3ZDYyNjQwOTIzOTEiLCJpYXQiOjE2NDU3NzQ5MjN9.VuiulYJisIH7jMFCWM81RzS-jYyKSyXNndavr48oRa0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "profilepic",
+							"type": "file",
+							"src": "/C:/Users/shubh/Desktop/d.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/users/me/profilepic",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"me",
+						"profilepic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "userfile",
+							"type": "file",
+							"src": "/C:/Users/shubh/Desktop/q.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/uploadfile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"uploadfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/getalldata",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getalldata"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
